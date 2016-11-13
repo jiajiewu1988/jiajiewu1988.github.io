@@ -91,16 +91,47 @@
 </ul>
 </li>
 <li>安装hexo<ul>
-<li>首先要安装nodejs和npm，hexo由npm来管理</li>
+<li>首先要安装 <strong>nodejs</strong> 和 <strong>npm</strong>，hexo 由 npm 来管理</li>
 <li>安装hexo package: <code>npm install hexo-cli -g</code></li>
 </ul>
 </li>
+<li>创建hexo project<ul>
+<li>use command: <code>hexo init &lt;your_project_name&gt;</code></li>
 </ul>
-
+</li>
+<li><p>设置 Deployment to Github</p>
+<ul>
+<li>安装 hexo 的 git plugin:<ul>
+<li><code>npm install hexo-deployer-git --save</code></li>
+</ul>
+</li>
+<li><p>修改 hexo config - _config.yml:</p>
+<ul>
+<li><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> &lt;github repo link<span class="string">&gt;</span></div><div class="line"><span class="attr">  branch:</span> &lt;optional<span class="string">&gt;</span></div><div class="line"><span class="attr">  message:</span> &lt;optional<span class="string">&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>type</strong> 和 <strong>repo</strong> 是必须的。</p>
+</li>
+<li>如果使用github, branch的值为空，那hexo会自动detect branch.</li>
+<li>message的默认值是</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Setup SSH Key with Github<ul>
+<li>为了方便 deploy, 建议使用 ssh 方式来同步 git repo</li>
+<li>Follow 以下链接来 setup ssh key<ul>
+<li><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" rel="external">Generating a new SSH key and adding it to the ssh-agent</a></li>
+<li><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="external">Adding a new SSH key to your GitHub account</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="更换-hexo-theme"><a href="#更换-hexo-theme" class="headerlink" title="更换 hexo theme"></a>更换 hexo theme</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/" data-id="civejc00p000000b7egmyzqeg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/" data-id="civfwcic300005tb712gp68ay" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/11/hello-world/" data-id="civejc00z000100b7ejrwzsz1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/11/hello-world/" data-id="civfwcice00015tb7dg09ie4z" class="article-share-link">Share</a>
       
       
     </footer>

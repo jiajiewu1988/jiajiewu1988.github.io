@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Setup Up My Hexo Blog on Github Pages]]></title>
+      <url>http://yoursite.com/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/</url>
+      <content type="html"><![CDATA[<p>Github Pages给用户提供了很方便的Blog Hosting的解决方案，可以非常方便的用诸如hexo, jekyll等的 Static Page CRM来管理Blog。</p>
+<p>因为题主对node.js和npm熟悉一点，就选用了hexo，来管理个人的github Pages<br><br><br></p>
+<h1 id="Blog-Initiation"><a href="#Blog-Initiation" class="headerlink" title="Blog Initiation"></a>Blog Initiation</h1><ul>
+<li>Create Git Repo on Github<ul>
+<li>github允许每个account有一个repository作为github page repo，repo的名字必须符合 <strong>\<your username\="">.github.io</your></strong> 的 format. 比如 jiajiewu1988.github.io</li>
+</ul>
+</li>
+<li>安装hexo<ul>
+<li>首先要安装 <strong>nodejs</strong> 和 <strong>npm</strong>，hexo 由 npm 来管理</li>
+<li>安装hexo package: <code>npm install hexo-cli -g</code></li>
+</ul>
+</li>
+<li>创建hexo project<ul>
+<li>use command: <code>hexo init &lt;your_project_name&gt;</code></li>
+</ul>
+</li>
+<li><p>设置 Deployment to Github</p>
+<ul>
+<li>安装 hexo 的 git plugin:<ul>
+<li><code>npm install hexo-deployer-git --save</code></li>
+</ul>
+</li>
+<li><p>修改 hexo config - _config.yml:</p>
+<ul>
+<li><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> &lt;github repo link<span class="string">&gt;</span></div><div class="line"><span class="attr">  branch:</span> &lt;optional<span class="string">&gt;</span></div><div class="line"><span class="attr">  message:</span> &lt;optional<span class="string">&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>type</strong> 和 <strong>repo</strong> 是必须的。</p>
+</li>
+<li>如果使用github, branch的值为空，那hexo会自动detect branch.</li>
+<li>message的默认值是 <code>Site updated \{\{ now\(&#39;YYYY-MM-DD HH:mm:ss&#39;\) \}\}</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Setup SSH Key with Github<ul>
+<li>为了方便 deploy, 建议使用 ssh 方式来同步 git repo</li>
+<li>Follow 以下链接来 setup ssh key<ul>
+<li><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" rel="external">Generating a new SSH key and adding it to the ssh-agent</a></li>
+<li><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="external">Adding a new SSH key to your GitHub account</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="更换-hexo-theme"><a href="#更换-hexo-theme" class="headerlink" title="更换 hexo theme"></a>更换 hexo theme</h1>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>http://yoursite.com/2016/11/11/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>

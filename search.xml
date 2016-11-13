@@ -52,7 +52,7 @@
 </ul>
 <h1 id="更换-hexo-theme"><a href="#更换-hexo-theme" class="headerlink" title="更换 hexo theme"></a>更换 hexo theme</h1><ul>
 <li>找到想要更换的 theme，<strong>git clone</strong> 到hexo下的theme directory中<ul>
-<li><code>git clone https://github.com/DrakeLeung/hexo-theme-again.git themes/again</code></li>
+<li><code>git clonehttps://github.com/DrakeLeung/hexo-theme-again.git themes/again</code></li>
 </ul>
 </li>
 <li>到hexo主目录下的_config.yml下修改<strong>theme</strong>的值<ul>

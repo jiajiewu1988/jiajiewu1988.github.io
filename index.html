@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   
@@ -15,250 +15,78 @@
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-
+  <link rel="stylesheet" href="/css/typing.css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+  
+    <body class="home-body">
+  
+      <div id="container" class="container">
+        <div class="home">
+  <div class="content">
+    <div class="profile">
+      <h1 class="nickname">NickName</h1>
+      <div class="description">
+        <p><p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> Fusce eget urna vitae velit <em>eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque</em> penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae <a href="http://hexo.io">libero pharetra</a> adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam.</p>
+</p>
       </div>
     </div>
+    <hr/>
+    <ul class="links">
+      
+        <li>
+          <a href="/archives">Blog</a>
+        </li>
+      
+        <li>
+          <a href="https://github.com/">GitHub</a>
+        </li>
+      
+        <li>
+          <a href="http://instagram.com/">Instagram</a>
+        </li>
+      
+        <li>
+          <a href="http://facebook.com/">Facebook</a>
+        </li>
+      
+        <li>
+          <a href="http://twitter.com/">Twitter</a>
+        </li>
+      
+    </ul>
   </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-Setup-Up-My-Hexo-Blog-on-Github-Pages" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/" class="article-date">
-  <time datetime="2016-11-11T22:55:33.000Z" itemprop="datePublished">2016-11-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/">Setup Up My Hexo Blog on Github Pages</a>
-    </h1>
-  
+</div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Github Pages给用户提供了很方便的Blog Hosting的解决方案，可以非常方便的用诸如hexo, jekyll等的 Static Page CRM来管理Blog。</p>
-<p>因为题主对node.js和npm熟悉一点，就选用了hexo，来管理个人的github Pages<br><br><br></p>
-<h1 id="Blog-Initiation"><a href="#Blog-Initiation" class="headerlink" title="Blog Initiation"></a>Blog Initiation</h1><ul>
-<li>Create Git Repo on Github<ul>
-<li>github允许每个account有一个repository作为github page repo，repo的名字必须符合 <strong>\<your username\="">.github.io</your></strong> 的 format. 比如 jiajiewu1988.github.io</li>
-</ul>
-</li>
-<li>安装hexo<ul>
-<li>首先要安装 <strong>nodejs</strong> 和 <strong>npm</strong>，hexo 由 npm 来管理</li>
-<li>安装hexo package: <code>npm install hexo-cli -g</code></li>
-</ul>
-</li>
-<li>创建hexo project<ul>
-<li>use command: <code>hexo init &lt;your_project_name&gt;</code></li>
-</ul>
-</li>
-<li><p>设置 Deployment to Github</p>
-<ul>
-<li>安装 hexo 的 git plugin:<ul>
-<li><code>npm install hexo-deployer-git --save</code></li>
-</ul>
-</li>
-<li><p>修改 hexo config - _config.yml:</p>
-<ul>
-<li><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> &lt;github repo link<span class="string">&gt;</span></div><div class="line"><span class="attr">  branch:</span> &lt;optional<span class="string">&gt;</span></div><div class="line"><span class="attr">  message:</span> &lt;optional<span class="string">&gt;</span></div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>type</strong> 和 <strong>repo</strong> 是必须的。</p>
-</li>
-<li>如果使用github, branch的值为空，那hexo会自动detect branch.</li>
-<li>message的默认值是 <code>Site updated \{\{ now\(&#39;YYYY-MM-DD HH:mm:ss&#39;\) \}\}</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Setup SSH Key with Github<ul>
-<li>为了方便 deploy, 建议使用 ssh 方式来同步 git repo</li>
-<li>Follow 以下链接来 setup ssh key<ul>
-<li><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" rel="external">Generating a new SSH key and adding it to the ssh-agent</a></li>
-<li><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="external">Adding a new SSH key to your GitHub account</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="更换-hexo-theme"><a href="#更换-hexo-theme" class="headerlink" title="更换 hexo theme"></a>更换 hexo theme</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/" data-id="civfyxbao0000i5b7q1f2jusd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/11/hello-world/" class="article-date">
-  <time datetime="2016-11-11T08:38:06.196Z" itemprop="datePublished">2016-11-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/11/hello-world/" data-id="civfyxbay0001i5b79k8s3flz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/">Setup Up My Hexo Blog on Github Pages</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/11/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+      
+  <footer id="footer" class="home-footer footer">
+    <div id="copyright" class="copyright">
+      &copy; 2016 John Doe  Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme &copy; <a href="https://github.com/geekplux" target="_blank">GeekPlux</a>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      </div>
+    </footer>
+
+      
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+<script src="/js/typing.js"></script>
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
 
-  </div>
-</body>
+
+
+
+
+
+
+    </div>
+  </body>
 </html>

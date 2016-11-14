@@ -60,7 +60,11 @@
 <li>找到想要更换的 theme，<strong>git clone</strong> 到hexo下的theme directory中<br><code>git clone https://github.com/hexo-theme-again.git themes/again</code></li>
 <li>到hexo主目录下的_config.yml下修改<strong>theme</strong>的值<br><code>theme: again</code></li>
 </ul>
-<h1 id="管理-media-files"><a href="#管理-media-files" class="headerlink" title="管理 media files"></a>管理 media files</h1><p><a href="https://hexo.io/docs/asset-folders.html" target="_blank" rel="external">Hexo Official Assets Folder Doc</a></p>
+<h1 id="管理-media-files"><a href="#管理-media-files" class="headerlink" title="管理 media files"></a>管理 media files</h1><p><a href="https://hexo.io/docs/asset-folders.html" target="_blank" rel="external">Hexo Official Assets Folder Doc</a><br>比较了一下各种存Assets的方法，还是觉得用 Post Assets Folder 会管理得比较清晰一点。在 Markdown 中也可以用 relative path 来引用 Assets Files.<br><br></p>
+<p>设置方法也很简单，在 _config.yml 中</p>
+<ul>
+<li><code>post_asset_folder: true</code></li>
+</ul>
 ]]></content>
     </entry>
     

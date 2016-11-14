@@ -4,6 +4,12 @@
   
     
     <entry>
+      <title><![CDATA[test post asset folder]]></title>
+      <url>https://jiajiewu1988.github.io/2016/11/13/test-post-asset-folder/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Setup Up My Hexo Blog on Github Pages]]></title>
       <url>https://jiajiewu1988.github.io/2016/11/11/Setup-Up-My-Hexo-Blog-on-Github-Pages/</url>
       <content type="html"><![CDATA[<p>Github Pages给用户提供了很方便的Blog Hosting的解决方案，可以非常方便的用诸如hexo, jekyll等的 Static Page CRM来管理Blog。</p>

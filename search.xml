@@ -16,7 +16,7 @@
 <p>因为题主对node.js和npm熟悉一点，就选用了hexo，来管理个人的github Pages<br><br><br></p>
 <h1 id="Blog-Initiation"><a href="#Blog-Initiation" class="headerlink" title="Blog Initiation"></a>Blog Initiation</h1><ul>
 <li>Create Git Repo on Github<ul>
-<li>github允许每个account有一个repository作为github page repo，repo的名字必须符合 <strong>\<your username\="">.github.io</your></strong> 的 format. 比如 jiajiewu1988.github.io</li>
+<li>github允许每个account有一个repository作为github page repo，repo的名字必须符合 <strong><your username="">.github.io</your></strong> 的 format. 比如 jiajiewu1988.github.io</li>
 </ul>
 </li>
 <li>安装hexo<ul>
@@ -60,7 +60,8 @@
 <li>找到想要更换的 theme，<strong>git clone</strong> 到hexo下的theme directory中<br><code>git clone https://github.com/hexo-theme-again.git themes/again</code></li>
 <li>到hexo主目录下的_config.yml下修改<strong>theme</strong>的值<br><code>theme: again</code></li>
 </ul>
-<h1 id="管理-media-files"><a href="#管理-media-files" class="headerlink" title="管理 media files"></a>管理 media files</h1>]]></content>
+<h1 id="管理-media-files"><a href="#管理-media-files" class="headerlink" title="管理 media files"></a>管理 media files</h1><p><a href="https://hexo.io/docs/asset-folders.html" target="_blank" rel="external">Hexo Official Assets Folder Doc</a></p>
+]]></content>
     </entry>
     
     <entry>

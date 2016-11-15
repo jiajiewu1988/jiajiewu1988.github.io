@@ -6,13 +6,19 @@
     <entry>
       <title><![CDATA[Notes for CSS Position]]></title>
       <url>https://jiajiewu1988.github.io/2016/11/14/Notes-for-CSS-Position/</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[test post asset folder]]></title>
-      <url>https://jiajiewu1988.github.io/2016/11/13/test-post-asset-folder/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<h2 id="CSS-Position-Values"><a href="#CSS-Position-Values" class="headerlink" title="CSS Position Values"></a>CSS Position Values</h2><ul>
+<li>absolute</li>
+<li>relative</li>
+<li>fixed</li>
+<li>static</li>
+<li>sticky (new)</li>
+</ul>
+<h2 id="Browser-compatibility-for-sticky-position"><a href="#Browser-compatibility-for-sticky-position" class="headerlink" title="Browser compatibility for sticky position"></a>Browser compatibility for <strong><em>sticky</em></strong> position</h2><img src="/2016/11/14/Notes-for-CSS-Position/sticky-browser-compatibility.png" alt="example" title="example">
+<h2 id="relative-v-s-absolute"><a href="#relative-v-s-absolute" class="headerlink" title="relative v.s. absolute"></a><strong>relative</strong> v.s. <strong>absolute</strong></h2><p>Both <strong>relative</strong> and <strong>absolute</strong> are positioned relative to the <strong>nearest positioned ancestor</strong></p>
+<p><strong>relative</strong> adjusts elements position so they do not overlap each other.</p>
+<p><strong>absolute</strong> does not leave space for the element. Instead, position it at a specific position only relays to its cloest positioned ancestor.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank" rel="external">MDN Documentation</a></p>
+]]></content>
     </entry>
     
     <entry>

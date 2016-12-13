@@ -4,6 +4,12 @@
   
     
     <entry>
+      <title><![CDATA[Nginx Commands Cheat Sheet]]></title>
+      <url>https://jiajiewu1988.github.io/2016/12/12/Nginx-Commands-Cheat-Sheet/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[JavaScript: append, appendChild, and innerHTML]]></title>
       <url>https://jiajiewu1988.github.io/2016/12/08/JavaScript-append-appendChild-and-innerHTML/</url>
       <content type="html"><![CDATA[<p>There are several ways to add nodes to DOM, <strong>jQuery.append</strong>, <strong>Node.appendChild</strong>, and <strong>Node.innerHTML</strong> are 3 major ways that are being used to add nodes to a DOM element.</p>

@@ -4,6 +4,49 @@
   
     
     <entry>
+      <title><![CDATA[Configuring Nginx]]></title>
+      <url>https://jiajiewu1988.github.io/2016/12/19/Configuring-Nginx/</url>
+      <content type="html"><![CDATA[<p>This is a Study Note of “Nginx Essentials” by ….</p>
+<h3 id="Nginx-Directive-Value-Types"><a href="#Nginx-Directive-Value-Types" class="headerlink" title="Nginx Directive Value Types"></a>Nginx Directive Value Types</h3><table>
+<thead>
+<tr>
+<th>Value Type</th>
+<th>Format</th>
+<th>Example of a value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flag</td>
+<td>[on&#124;off]</td>
+<td>on, off</td>
+</tr>
+<tr>
+<td>Signed integer</td>
+<td>-?[0-9]+</td>
+<td>1024</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>[0-9]+([mM]&#124;[kK])?</td>
+<td>23M, 12348k</td>
+</tr>
+<tr>
+<td>Offset</td>
+<td>[0-9]+([mM]&#124;[kK]&#124;[gG])?</td>
+<td>34G, 256m</td>
+</tr>
+<tr>
+<td>Milliseconds</td>
+<td>[0-9]+[yMwdhms]?</td>
+<td>30s, 60m</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Nginx Commands Cheat Sheet]]></title>
       <url>https://jiajiewu1988.github.io/2016/12/12/Nginx-Commands-Cheat-Sheet/</url>
       <content type="html"></content>

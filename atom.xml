@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jiajiewu1988.github.io/"/>
-  <updated>2016-12-20T20:05:05.552Z</updated>
+  <updated>2017-02-05T07:23:23.006Z</updated>
   <id>https://jiajiewu1988.github.io/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Javascript Debounce</title>
+    <link href="https://jiajiewu1988.github.io/2017/02/04/Javascript-Debounce/"/>
+    <id>https://jiajiewu1988.github.io/2017/02/04/Javascript-Debounce/</id>
+    <published>2017-02-05T06:24:33.000Z</published>
+    <updated>2017-02-05T07:23:23.006Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://davidwalsh.name/javascript-debounce-function" target="_blank" rel="external">David Walsh: Debounce</a></p>
+<p><strong>debounce function</strong> is used to optimize web performance when there are events get fired frequently.</p>
+<p>A <strong>debounce function</strong> limits the rate which a function can fire.</p>
+<p>For example, we can limit an event handler to fire at every interval, instead of the handler getting fired when the event is fired.</p>
+<p>Code example from <em>David Walsh Blog</em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Returns a function, that, as long as it continues to be invoked, will not</span></div><div class="line"><span class="comment">// be triggered. The function will be called after it stops being called for</span></div><div class="line"><span class="comment">// N milliseconds. If `immediate` is passed, trigger the function on the</span></div><div class="line"><span class="comment">// leading edge, instead of the trailing.</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">debounce</span>(<span class="params">func, wait, immediate</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> timeout;</div><div class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">var</span> context = <span class="keyword">this</span>, args = <span class="built_in">arguments</span>;</div><div class="line">		<span class="keyword">var</span> later = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			timeout = <span class="literal">null</span>;</div><div class="line">			<span class="keyword">if</span> (!immediate) func.apply(context, args);</div><div class="line">		&#125;;</div><div class="line">		<span class="keyword">var</span> callNow = immediate &amp;&amp; !timeout;</div><div class="line">		clearTimeout(timeout);</div><div class="line">		timeout = setTimeout(later, wait);</div><div class="line">		<span class="keyword">if</span> (callNow) func.apply(context, args);</div><div class="line">	&#125;;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>Example of <strong>debounce function</strong> call:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myEfficientFn = debounce(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="comment">// All the taxing stuff you do</span></div><div class="line">&#125;, <span class="number">250</span>);</div><div class="line"></div><div class="line"><span class="built_in">window</span>.addEventListener(<span class="string">'resize'</span>, myEfficientFn);</div></pre></td></tr></table></figure>
+<p>In this case, we limit the handler <em>myEfficientFn</em> to fire after 250 ms when every <em>resize</em> event gets fired, instead of immediately after the <em>resize</em> event get caught. </p>
+<p>Therefore, <strong>debounce</strong> function help to improve web performance in such cases.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://davidwalsh.name/javascript-debounce-function&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;David Walsh: Debounce&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;de
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Configuring Nginx</title>
